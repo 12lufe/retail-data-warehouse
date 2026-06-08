@@ -1,0 +1,16 @@
+零售数据分析/
+├── README.md
+├── data
+├── docs
+│   ├── analysis_guide.md
+│   └── data_dictionary.md
+└── sql
+    ├── 00_ddl_schema.sql
+    ├── 01_rfm_base.sql
+    ├── 02_rfm_segmentation.sql
+    ├── 03_high_rebuy_city_month.sql
+    ├── 04_city_return_analysis.sql
+    ├── 05_category_sales_return.sql
+    ├── 06_price_supplier_analysis.sql
+    ├── 07_customer_type_ratio.sql
+    └── 08_customer_type_return.sql
