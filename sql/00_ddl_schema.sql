@@ -89,13 +89,13 @@ CREATE TABLE suppliers (
     country VARCHAR(50) NOT NULL COMMENT '国家'
 ) COMMENT='供应商信息表';
 
--- 添加外键约束(可选)
--- ALTER TABLE orders ADD FOREIGN KEY (customer_id) REFERENCES customers(customer_id);
--- ALTER TABLE orders ADD FOREIGN KEY (store_id) REFERENCES stores(store_id);
--- ALTER TABLE order_items ADD FOREIGN KEY (order_id) REFERENCES orders(order_id);
--- ALTER TABLE order_items ADD FOREIGN KEY (product_id) REFERENCES products(product_id);
--- ALTER TABLE products ADD FOREIGN KEY (category_id) REFERENCES categories(category_id);
--- ALTER TABLE products ADD FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id);
--- ALTER TABLE payments ADD FOREIGN KEY (order_id) REFERENCES orders(order_id);
--- ALTER TABLE returns ADD FOREIGN KEY (order_item_id) REFERENCES order_items(order_item_id);
--- ALTER TABLE employees ADD FOREIGN KEY (store_id) REFERENCES stores(store_id);
+-- 添加外键约束
+ALTER TABLE orders ADD FOREIGN KEY (customer_id) REFERENCES customers(customer_id);
+ALTER TABLE orders ADD FOREIGN KEY (store_id) REFERENCES stores(store_id);
+ALTER TABLE order_items ADD FOREIGN KEY (order_id) REFERENCES orders(order_id);
+ALTER TABLE order_items ADD FOREIGN KEY (product_id) REFERENCES products(product_id);
+ALTER TABLE products ADD FOREIGN KEY (category_id) REFERENCES categories(category_id);
+ALTER TABLE products ADD FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id);
+ALTER TABLE payments ADD FOREIGN KEY (order_id) REFERENCES orders(order_id);
+ALTER TABLE returns ADD FOREIGN KEY (order_item_id) REFERENCES order_items(order_item_id);
+ALTER TABLE employees ADD FOREIGN KEY (store_id) REFERENCES stores(store_id);
